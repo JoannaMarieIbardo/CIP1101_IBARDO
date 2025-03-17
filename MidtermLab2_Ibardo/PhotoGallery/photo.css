@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d6bbf5;
+    color: #6a3d8a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: #6a3d8a;
+    text-align: center;
+    margin: 20px 0 40px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 15px;
+}
+
+.gallery {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 3px solid #d6bbf5;
+}
+
+.gallery a {
+    display: block;
+    width: 100%; 
+    height: 350px; 
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+.description {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    color: #6a3d8a;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gallery:hover {
+    border-color: #6a3d8a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6a3d8a;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-button a {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.home-button:hover {
+    background-color: #d6bbf5;
+}
+
+.home-button:hover a {
+    color: #6a3d8a;
+}
+
+@media (max-width: 900px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}
+.go-top {
+    display: inline-block;
+    width: fit-content;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6a3d8a;
+    border: 2px solid #6a3d8a;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 2px 4px 6px rgba(255, 182, 193, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.go-top:hover {
+    background-color: #6a3d8a;
+    transform: scale(1.05);
+    box-shadow: 3px 6px 8px rgba(255, 182, 193, 0.5);
+}
